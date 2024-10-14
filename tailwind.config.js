@@ -2,20 +2,32 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      blue: "#0080ff",
-      red: "#FF1000",
-      green: "#32FF00",
-      orange: "#FFA000",
-      pink: "#FF00C8",
-      "gray-dark": "#2B2F33",
-      gray: "#406080",
+    extend: {
+      colors: {
+        blue: "#0080ff",
+        red: "#FF1000",
+        green: "#32FF00",
+        orange: "#FFA000",
+        pink: "#FF00C8",
+        "gray-dark": "#2B2F33",
+        gray: "#406080",
+        white: "#FFF",
+      },
+      // textColor: "#FF0",
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        serif: ["EB Garamond", "serif"],
+      },
+      animation: {
+        pulsate: "pulsate 1s ease-in-out infinite",
+      },
+      keyframes: {
+        pulsate: {
+          "0%, 100%": { borderColor: "#0080ff" },
+          "50%": { borderColor: "#00D0FF" },
+        },
+      },
     },
-    fontFamily: {
-      sans: ["Roboto", "sans-serif"],
-      serif: ["EB Garamond", "serif"],
-    },
-    extend: {},
   },
   plugins: [],
 };
