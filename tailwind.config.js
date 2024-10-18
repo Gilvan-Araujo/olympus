@@ -13,7 +13,6 @@ export default {
         gray: "#406080",
         white: "#FFF",
       },
-      // textColor: "#FF0",
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
         serif: ["EB Garamond", "serif"],
