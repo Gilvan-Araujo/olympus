@@ -1,15 +1,10 @@
 import Clock from "./Clock";
-import { Name } from "./Name";
 import { Profile } from "./Profile";
 
 export function Header() {
   return (
     <div className="flex-row flex items-center justify-between ">
       <Profile />
-
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-        <Name />
-      </div>
 
       <div className="flex justify-between gap-9 items-center">
         <Clock />
