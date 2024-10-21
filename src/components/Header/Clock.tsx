@@ -12,7 +12,7 @@ const Clock = () => {
     return () => clearInterval(timerId);
   }, []);
 
-  return <h1 className="text-2xl">{time.toLocaleTimeString()}</h1>;
+  return <p className="text-xl 2xl:text-2xl">{time.toLocaleTimeString()}</p>;
 };
 
 export default Clock;

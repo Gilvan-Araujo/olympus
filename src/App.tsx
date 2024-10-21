@@ -18,19 +18,19 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full flex h-[100vh] bg-gray-dark px-11 pb-8 py-14 flex-col text-white justify-between">
+    <div className="flex h-[100vh] w-full flex-col justify-between bg-gray-dark px-7 pb-5 pt-9 text-white 2xl:px-11 2xl:pb-8 2xl:pt-14">
       <Header />
 
       <div
         id="scroll"
-        className="overflow-hidden sticky px-28 mx-[-2.5rem] h-[25rem] whitespace-nowrap flex flex-row mt-[-2.25rem] "
+        className="scrollbar-hide sticky mx-[-1.75rem] mt-[-2.25rem] flex h-[21rem] flex-row overflow-scroll whitespace-nowrap px-24 2xl:mx-[-2.75rem] 2xl:h-[25rem] 2xl:px-28"
       >
         {Array.from({ length: 10 }, (_, k) => k).map((index) => {
           return <Project key={index} name={index} />;
         })}
       </div>
 
-      <div className="flex flex-row self-center gap-9 mb-[-1.75rem]">
+      <div className="mb-[-1.75rem] flex flex-row gap-6 self-center 2xl:gap-9">
         <Skill name="React.JS" src={react} />
         <Skill name="Next.JS" src={next} />
         <Skill name="React.JS" src={react} />
