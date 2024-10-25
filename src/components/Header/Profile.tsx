@@ -3,7 +3,7 @@ export function Profile() {
     <div className="group my-0 mb-[-1.75rem] flex shrink-0 flex-col items-center">
       <button
         className={
-          "group box-content flex h-16 w-16 items-center justify-center rounded-full border-4 border-transparent bg-clip-content hover:border-collapse hover:animate-pulsate hover:border-4 hover:border-solid hover:border-blue 2xl:h-24 2xl:w-24 2xl:border-8 2xl:hover:border-8"
+          "group box-content flex size-12 items-center justify-center rounded-full border-4 border-transparent bg-clip-content hover:border-collapse hover:animate-pulsate hover:border-4 hover:border-solid hover:border-blue xl:size-16 2xl:size-24 2xl:border-8 2xl:hover:border-8"
         }
       >
         <img
